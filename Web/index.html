@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Record and Save</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="btn-group">
+        <button class="primary" id="start">Start Recording</button>
+        <button class="danger" id="stop">Stop Recording</button>
+        <button class="warning" id="fullscreen-btn" style="display: none">
+          Exit Full Screen
+        </button>
+      </section>
+      <video id="preview" autoplay />
+    </main>
+    <section id="modal-confirmation" class="modal">
+      <div class="overlay" />
+      <article class="modal-body">
+        <h2>Apakah anda yakin untuk keluar dari mode fullscreen?</h2>
+        <section class="btn-group">
+          <button id="fs-confirm" class="primary">Ya</button>
+          <button id="fs-cancel" class="danger">Batal</button>
+        </section>
+      </article>
+    </section>
+  </body>
+  <script src="./src/script.js"></script>
+</html>
